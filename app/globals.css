@@ -2,3 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --primary: #4776e6;
+    --secondary: #8e54e9;
+    --background: #0b0b0f;
+    --foreground: #ffffff;
+
+    --muted: rgba(255, 255, 255, 0.64);
+    --muted-foreground: rgba(255, 255, 255, 0.6);
+
+    --primary-gradient: linear-gradient(
+      90deg,
+      var(--primary) 0%,
+      var(--secondary) 100%
+    );
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground w-full min-h-screen flex flex-col overflow-x-hidden;
+  }
+
+  main {
+    @apply flex-grow;
+  }
+}
