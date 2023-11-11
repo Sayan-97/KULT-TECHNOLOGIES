@@ -1,3 +1,4 @@
+import ContactUs from "@/components/contact-us";
 import OurPortfolio from "@/components/our-portfolio";
 import Reviews from "@/components/reviews";
 import Blockchains from "@/components/shared/blockchains";
@@ -6,6 +7,7 @@ import Button from "@/components/ui/button";
 export default function Home() {
   return (
     <>
+      {/* Hero */}
       <section className="py-20">
         <div className="container space-y-20">
           <div className="text-center space-y-8">
@@ -21,13 +23,19 @@ export default function Home() {
               <Button content="Our Portfolio" />
             </div>
           </div>
+          {/* blockchains marquee */}
           <Blockchains />
         </div>
       </section>
 
+      {/* Portfolio */}
       <OurPortfolio />
 
+      {/* Reviews */}
       <Reviews />
+
+      {/* Contact Us */}
+      <ContactUs />
 
       {/* <section className="py-20">
         <div className="container">
