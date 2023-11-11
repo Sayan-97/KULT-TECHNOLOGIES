@@ -1,5 +1,6 @@
 import ContactUs from "@/components/contact-us";
 import OurPortfolio from "@/components/our-portfolio";
+import OurServices from "@/components/our-services";
 import Reviews from "@/components/reviews";
 import Blockchains from "@/components/shared/blockchains";
 import Button from "@/components/ui/button";
@@ -28,6 +29,30 @@ export default function Home() {
           <Blockchains />
         </div>
       </section>
+
+      {/* About Us */}
+      <section className="py-20">
+        <div className="container">
+          <div className="lg:w-1/2 flex flex-col items-start space-y-6">
+            <h5 className="text-2xl font-semibold uppercase text-transparent bg-primary-gradient bg-clip-text">
+              about us
+            </h5>
+            <h2 className="text-5xl font-semibold capitalize leading-snug">
+              Cutting edge technology <br /> crafted for your business
+            </h2>
+            <p className="text-xl text-muted">
+              Web3 has never been easier for the enterprise. Our suite of
+              products delivers out-of-the-box blockchain applications with
+              enterprise-grade security and scalability—cutting months off
+              development timelines to deliver real business value on one.
+            </p>
+            <Button content="Learn More" />
+          </div>
+        </div>
+      </section>
+
+      {/* Our Services */}
+      <OurServices />
 
       {/* Portfolio */}
       <OurPortfolio />

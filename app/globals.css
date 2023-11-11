@@ -55,18 +55,19 @@
     @apply flex-grow;
   }
 
-  input, textarea {
-    @apply p-2 rounded-lg bg-accent border text-white !important
+  input,
+  textarea {
+    @apply p-2 rounded-lg bg-accent border text-white !important;
   }
 }
 
-/* .service-content {
-  width: calc(33.333333% - 24px);
+.service-content {
+  width: calc(33.333333% - 16px);
 }
 
 @media screen and (max-width: 1024px) {
   .service-content {
-    width: calc(50% - 24px);
+    width: calc(50% - 16px);
   }
 }
 
@@ -74,4 +75,5 @@
   .service-content {
     width: 100%;
   }
-} */
+}
+

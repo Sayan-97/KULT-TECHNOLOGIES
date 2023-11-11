@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
             businesses in the digital age.
           </p>
         </div>
-        <div className="grid grid-cols-10 grid-rows-2 gap-4">
+        <div className="grid grid-cols-10 grid-rows-2 gap-6">
           <div className="bg-accent col-span-10 lg:col-span-4 row-span-2 p-8 rounded-2xl space-y-8">
             <Image
               src={`/imgs/eth-coins.png`}
@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
             </h3>
           </div>
           <div className="bg-accent col-span-10 lg:col-span-6 p-8 rounded-2xl flex max-md:flex-col items-start gap-8">
-            <h3 className="text-3xl font-bold leading-normal">
+            <h3 className="lg:w-1/2 text-3xl font-bold leading-normal">
               Our team comprises industry experts in game development, AI,
               branding, and blockchain.
             </h3>
@@ -38,13 +38,22 @@ export default function WhyChooseUs() {
               height={246}
             />
           </div>
-          <div className="bg-accent col-span-10 md:col-span-5 lg:col-span-3 p-8 rounded-2xl">
+          <div className="relative bg-accent col-span-10 md:col-span-5 lg:col-span-3 p-8 rounded-2xl pb-40">
+            <Image src={`/imgs/GridBG.png`} alt="img" fill sizes="100%, 100%" />
             <h3 className="text-3xl font-bold">
               We understand your unique needs and provide customized solution.
             </h3>
           </div>
-          <div className="bg-accent col-span-10 md:col-span-5 lg:col-span-3 p-8 rounded-2xl">
-            <h3 className="text-3xl font-bold">We measure our success by your achievements.</h3>
+          <div className="relative bg-accent col-span-10 md:col-span-5 lg:col-span-3 p-8 rounded-2xl pb-40">
+            <Image
+              src={`/imgs/LooperBG.png`}
+              alt="img"
+              fill
+              sizes="100%, 100%"
+            />
+            <h3 className="text-3xl font-bold">
+              We measure our success by your achievements.
+            </h3>
           </div>
         </div>
       </div>
