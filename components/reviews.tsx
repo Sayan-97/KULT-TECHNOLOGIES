@@ -11,11 +11,9 @@ export default function Reviews() {
   return (
     <section className="py-20">
       <div className="container space-y-16">
-        <div className="w-1/2 flex flex-col items-center mx-auto space-y-8">
-          <h2 className="text-5xl font-semibold text-cemter">
-            What Keeps Us Going
-          </h2>
-          <p className="text-xl text-muted text-center">
+        <div className="lg:w-1/2 flex flex-col items-center text-center mx-auto space-y-8">
+          <h2 className="text-5xl font-semibold ">What Keeps Us Going</h2>
+          <p className="text-xl text-muted ">
             {" "}
             We're a cutting-edge service company with a passion for innovation,
             offering a wide range of services that empower businesses in the
@@ -24,7 +22,15 @@ export default function Reviews() {
         </div>
         <Swiper
           modules={[Navigation]}
-          slidesPerView={3}
+          slidesPerView={1}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
           spaceBetween={50}
           navigation={{
             prevEl: ".review-slide-prev",
@@ -33,7 +39,7 @@ export default function Reviews() {
           style={{
             position: "relative",
             paddingLeft: "20px",
-            paddingRight: "20px"
+            paddingRight: "20px",
           }}
         >
           {reviews.map((item, index) => (

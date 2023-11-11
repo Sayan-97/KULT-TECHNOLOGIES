@@ -35,8 +35,8 @@ export default function Footer() {
   return (
     <footer>
       <div className="container">
-        <div className="py-8 flex justify-between">
-          <div className="w-1/4 space-y-8">
+        <div className="py-8 flex justify-between flex-wrap gap-8">
+          <div className="lg:w-1/4 space-y-8">
             <Image src="/svgs/kult.svg" alt="img" width={121} height={36} />
             <p>
               At Kult Technologies, we believe in a systematic and collaborative

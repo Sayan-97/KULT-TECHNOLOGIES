@@ -12,7 +12,7 @@ export default function ContactUs() {
 
   return (
     <section className="py-20">
-      <div className="container grid grid-cols-2 items-center">
+      <div className="container grid lg:grid-cols-2 items-center max-lg:gap-12">
         <div className="space-y-12">
           <h2 className="text-5xl font-semibold">Contact Us</h2>
           <ul className="text-xl space-y-6">

@@ -3,6 +3,7 @@ import OurPortfolio from "@/components/our-portfolio";
 import Reviews from "@/components/reviews";
 import Blockchains from "@/components/shared/blockchains";
 import Button from "@/components/ui/button";
+import WhyChooseUs from "@/components/why-choose-us";
 
 export default function Home() {
   return (
@@ -30,6 +31,9 @@ export default function Home() {
 
       {/* Portfolio */}
       <OurPortfolio />
+
+      {/* Why Choose Us */}
+      <WhyChooseUs />
 
       {/* Reviews */}
       <Reviews />
