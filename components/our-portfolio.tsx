@@ -17,7 +17,7 @@ export default function OurPortfolio() {
             <h2 className="text-5xl font-semibold">Our Portfolio</h2>
             <p className="text-xl text-muted">
               {" "}
-              We're a cutting-edge service company with a passion for
+              We&apos;re a cutting-edge service company with a passion for
               innovation, offering a wide range of services that empower
               businesses in the digital age.
             </p>
