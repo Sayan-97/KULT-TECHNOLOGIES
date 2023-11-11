@@ -8,16 +8,39 @@
     --secondary: #8e54e9;
     --background: #0b0b0f;
     --foreground: #ffffff;
+    --accent: #131317;
 
     --muted: rgba(255, 255, 255, 0.64);
     --muted-foreground: rgba(255, 255, 255, 0.6);
+
+    --swiper-navigation-color: white;
 
     --primary-gradient: linear-gradient(
       90deg,
       var(--primary) 0%,
       var(--secondary) 100%
     );
+    --portfolio-card-gradient: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 20.68%,
+      rgba(0, 0, 0, 0.76) 85.05%
+    );
   }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-gradient);
+  border-radius: 4px;
+  cursor: grab;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
 }
 
 @layer base {
@@ -27,5 +50,54 @@
 
   main {
     @apply flex-grow;
+  }
+}
+
+.service-content {
+  width: calc(33.333333% - 24px);
+}
+
+@media screen and (max-width: 1024px) {
+  .service-content {
+    width: calc(50% - 24px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-content {
+    width: 100%;
+  }
+}
+
+/* .slide{
+  animation: scroll 2s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 90px));
+  }
+} */
+
+.scroll-parent {
+  width: 100%;
+  height: 20rem;
+  overflow-x: hidden;
+  display: flex;
+}
+
+.scroll-element {
+  animation: primary 2s linear infinite;
+}
+
+@keyframes primary {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }

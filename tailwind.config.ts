@@ -21,11 +21,21 @@ const config: Config = {
         secondary: "var(--secondary)",
         background: "var(--background)",
         foreground: "var(--foreground)",
+        accent: "var(--accent)",
         muted: "var(--muted)",
         "muted-foreground": "var(--muted-foreground)",
       },
       backgroundImage: {
         "primary-gradient": "var(--primary-gradient)",
+      },
+      animation: {
+        "infinite-scroll": "infinite-scroll 5s linear infinite",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
     },
   },
