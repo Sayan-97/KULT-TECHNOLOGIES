@@ -11,9 +11,9 @@ export default function Reviews() {
   return (
     <section className="py-20">
       <div className="container space-y-16">
-        <div className="lg:w-1/2 flex flex-col items-center text-center mx-auto space-y-8">
-          <h2 className="text-5xl font-semibold ">What Keeps Us Going</h2>
-          <p className="text-xl text-muted ">
+        <div className="lg:w-1/2 flex flex-col items-center text-center mx-auto space-y-6">
+          <h2 className="text-5xl font-semibold">What Keeps Us Going</h2>
+          <p className="text-xl text-muted">
             {" "}
             We&apos;re a cutting-edge service company with a passion for innovation,
             offering a wide range of services that empower businesses in the
