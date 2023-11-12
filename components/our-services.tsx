@@ -4,7 +4,7 @@ import { services } from "@/constants";
 
 export default function OurServices() {
   return (
-    <section className="py-20">
+    <section id="services" className="py-20">
       <div className="container space-y-12">
         <div className="lg:w-1/2 space-y-6 flex flex-col items-center text-center mx-auto">
           <h2 className="text-5xl font-semibold">Our Services</h2>

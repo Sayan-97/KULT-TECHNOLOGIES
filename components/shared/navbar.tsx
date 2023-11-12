@@ -9,7 +9,7 @@ export default function Navbar() {
   const [activeLink, setActiveLink] = useState("Home");
   const links = [
     { label: "Home", link: "/" },
-    { label: "Services", link: "/services" },
+    { label: "Services", link: "#services" },
     { label: "Portfolio", link: "/" },
     { label: "About Us", link: "/" },
     { label: "Contact Us", link: "/" },
