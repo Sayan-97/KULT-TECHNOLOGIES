@@ -4,7 +4,7 @@ import { blockchains } from "@/constants";
 
 export default function Blockchains() {
   return (
-    <div className="space-y-8 text-center">
+    <div className="space-y-10 text-center">
       <h6 className="text-secondary text-lg font-medium capitalize">
         Blockchains that we work with
       </h6>

@@ -21,10 +21,10 @@ export default function ContactUsForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="space-y-12 bg-accent p-8 rounded-2xl"
+      className="space-y-12 bg-accent p-8 rounded-2xl card-border"
     >
       <h2 className="text-4xl font-semibold">Get A Quote</h2>
-      <div className="space-y-6">
+      <div className="space-y-8">
         <div className="grid gap-1">
           <label htmlFor="name">Your Name</label>
           <input

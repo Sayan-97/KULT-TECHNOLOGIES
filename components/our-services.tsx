@@ -29,7 +29,7 @@ export default function OurServices() {
               3.0 era. Our game development experts craft interactive and
               decentralized games that redefine the gaming landscape.
             </p>
-            <Button content="Get Started" />
+            <Button variant="secondary" content="Get Started" />
           </div>
 
           <div className="service-content bg-accent p-6 rounded-2xl flex flex-col items-start gap-8">
@@ -46,7 +46,24 @@ export default function OurServices() {
               3.0 era. Our game development experts craft interactive and
               decentralized games that redefine the gaming landscape.
             </p>
-            <Button content="Get Started" />
+            <Button variant="secondary" content="Get Started" />
+          </div>
+
+          <div className="service-content bg-accent p-6 rounded-2xl flex flex-col items-start gap-8 ">
+            <Image
+              src={`/imgs/services-1.png`}
+              alt="img"
+              width={271.488}
+              height={280.585}
+              className="self-center"
+            />
+            <h3 className="text-2xl font-bold">Web 3 Game Development</h3>
+            <p className="text-muted">
+              Transform your gaming ideas into immersive experiences in the Web
+              3.0 era. Our game development experts craft interactive and
+              decentralized games that redefine the gaming landscape.
+            </p>
+            <Button variant="secondary" content="Get Started" />
           </div>
 
           <div className="service-content bg-accent p-6 rounded-2xl flex flex-col items-start gap-8">
@@ -63,7 +80,7 @@ export default function OurServices() {
               3.0 era. Our game development experts craft interactive and
               decentralized games that redefine the gaming landscape.
             </p>
-            <Button content="Get Started" />
+            <Button variant="secondary" content="Get Started" />
           </div>
 
           <div className="service-content bg-accent p-6 rounded-2xl flex flex-col items-start gap-8">
@@ -80,24 +97,7 @@ export default function OurServices() {
               3.0 era. Our game development experts craft interactive and
               decentralized games that redefine the gaming landscape.
             </p>
-            <Button content="Get Started" />
-          </div>
-
-          <div className="service-content bg-accent p-6 rounded-2xl flex flex-col items-start gap-8">
-            <Image
-              src={`/imgs/services-1.png`}
-              alt="img"
-              width={271.488}
-              height={280.585}
-              className="self-center"
-            />
-            <h3 className="text-2xl font-bold">Web 3 Game Development</h3>
-            <p className="text-muted">
-              Transform your gaming ideas into immersive experiences in the Web
-              3.0 era. Our game development experts craft interactive and
-              decentralized games that redefine the gaming landscape.
-            </p>
-            <Button content="Get Started" />
+            <Button variant="secondary" content="Get Started" />
           </div>
         </div>
       </div>

@@ -63,6 +63,18 @@
 
 .service-content {
   width: calc(33.333333% - 16px);
+  border: 2px solid transparent;
+}
+
+.service-content:hover {
+  border: 2px solid;
+  border-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 10%,
+      var(--secondary) 50%,
+      rgba(0, 0, 0, 0) 90%
+    )
+    1;
 }
 
 @media screen and (max-width: 1024px) {
@@ -77,3 +89,30 @@
   }
 }
 
+.card-border {
+  border: 2px solid;
+  border-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 10%,
+      var(--secondary) 50%,
+      rgba(0, 0, 0, 0) 90%
+    )
+    1;
+}
+
+.secondary-variant {
+  outline: 2px solid rgba(99, 104, 231, 0.25);
+  outline-offset: -2px;
+  border: 2px solid;
+  border-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 10%,
+      var(--secondary) 50%,
+      rgba(0, 0, 0, 0) 90%
+    )
+    1;
+}
+
+.secondary-variant:hover {
+  background: var(--primary-gradient);
+}

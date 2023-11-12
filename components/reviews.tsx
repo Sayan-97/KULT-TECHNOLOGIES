@@ -44,7 +44,7 @@ export default function Reviews() {
         >
           {reviews.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="relative bg-accent flex flex-col items-center text-center mt-8 p-8 pt-10 space-y-4 rounded-2xl">
+              <div className="relative bg-accent flex flex-col items-center text-center mt-8 p-8 pt-10 space-y-4 rounded-2xl card-border">
                 <div className="absolute -top-8 bg-primary p-1 rounded-full">
                   <Image
                     src={item.image}

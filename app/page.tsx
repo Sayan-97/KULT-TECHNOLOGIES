@@ -12,7 +12,7 @@ export default function Home() {
       {/* Hero */}
       <section className="py-20">
         <div className="container space-y-20">
-          <div className="text-center space-y-8">
+          <div className="text-center flex flex-col items-center gap-6">
             <h4 className="text-xl md:text-2xl text-muted uppercase">
               Welcome to Kult Technologies
             </h4>
@@ -20,9 +20,9 @@ export default function Home() {
               Revolutionize Your Industry with Web 3 Technology:{" "}
               <span className="text-indigo-400">Explore the Future</span>
             </h1>
-            <div className="space-x-6">
+            <div className="flex items-center space-x-6">
               <Button content="Get Started" />
-              <Button content="Our Portfolio" />
+              <Button variant="secondary" content="Our Portfolio" />
             </div>
           </div>
           {/* blockchains marquee */}
@@ -65,26 +65,6 @@ export default function Home() {
 
       {/* Contact Us */}
       <ContactUs />
-
-      {/* <section className="py-20">
-        <div className="container">
-          <div className="">
-            <h2>Our Services</h2>
-            <p>
-              We're a cutting-edge service company with a passion for
-              innovation, offering a wide range of services that empower
-              businesses in the digital age.
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-6">
-            <div className="service-content bg-red-500 h-[400px]"></div>
-            <div className="service-content bg-red-500 h-[400px]"></div>
-            <div className="service-content bg-red-500 h-[400px]"></div>
-            <div className="service-content bg-red-500 h-[400px]"></div>
-            <div className="service-content bg-red-500 h-[400px]"></div>
-          </div>
-        </div>
-      </section> */}
     </>
   );
 }
