@@ -63,15 +63,15 @@
 
 .service-content {
   width: calc(33.333333% - 16px);
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 
 .service-content:hover {
-  border: 2px solid;
+  border: 1px solid;
   border-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0) 10%,
-      var(--secondary) 50%,
+      var(--primary) 50%,
       rgba(0, 0, 0, 0) 90%
     )
     1;
@@ -114,5 +114,44 @@
 }
 
 .secondary-variant:hover {
+  background: var(--primary-gradient);
+}
+
+.button-primary {
+  background: var(--primary-gradient);
+  padding: 10px 36px;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+}
+
+.button-primary:hover {
+  outline: 2px solid rgba(99, 104, 231, 0.25);
+  background: transparent;
+  border-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 10%,
+      var(--secondary) 50%,
+      rgba(0, 0, 0, 0) 90%
+    )
+    1;
+}
+
+.button-secondary {
+  outline: 2px solid rgba(99, 104, 231, 0.25);
+  outline-offset: -2px;
+  background: transparent;
+  padding: 10px 36px;
+  border: 2px solid;
+  border-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 10%,
+      var(--secondary) 50%,
+      rgba(0, 0, 0, 0) 90%
+    )
+    1;
+}
+
+.button-secondary:hover {
   background: var(--primary-gradient);
 }
