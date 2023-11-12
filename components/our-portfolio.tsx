@@ -38,29 +38,23 @@ export default function OurPortfolio() {
           {portfolios.map((item, index) => (
             <SwiperSlide
               key={index}
-              style={{
-                width: "60%",
-                height: "440px",
-                display: "flex",
-                alignItems: "flex-end",
-                border: "2px solid",
-                borderImage:
-                  "linear-gradient(to right, rgba(0, 0, 0, 0) 10%, #8e54e9 50%, rgba(0, 0, 0, 0) 90%)1",
-              }}
+              style={{ width: "60%" }}
               className="rounded-2xl overflow-hidden"
             >
-              <div
-                className="w-full h-full flex items-end p-8 space-y-2"
-                style={{
-                  background: `var(--portfolio-card-gradient), url(${item.image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              >
-                <div className="flex flex-col gap-8">
-                  <h3>{item.title}</h3>
-                  <p className="flex-grow text-xl">{item.des}</p>
-                  <Link href={`/`}>Learn More</Link>
+              <div className="w-full h-[440px] card-border">
+                <div
+                  className="w-full h-full flex items-end p-8 space-y-2"
+                  style={{
+                    background: `var(--portfolio-card-gradient), url(${item.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
+                  <div className="flex flex-col gap-8">
+                    <h3>{item.title}</h3>
+                    <p className="flex-grow text-xl">{item.des}</p>
+                    <Link href={`/`}>Learn More</Link>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>

@@ -9,11 +9,11 @@ export default function Button(props: ButtonProps) {
   return (
     <button
       type={props.type}
-      className={`rounded-lg font-medium
+      className={`font-medium
         ${props.variant === "secondary" ? "button-secondary" : "button-primary"}
       `}
     >
-      {props.content}
+      <div>{props.content}</div>
     </button>
   );
 }

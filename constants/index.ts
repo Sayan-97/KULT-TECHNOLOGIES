@@ -97,3 +97,32 @@ export const reviews = [
     msg: "Kult Technologies has been an invaluable partner in our digital transformation journey. Their expert team helped us streamline our operations and improve efficiency. We couldn't be happier with the results.",
   },
 ];
+
+// Services
+export const services = [
+  {
+    image: "/imgs/services-1.png",
+    title: "Web 3 Game Development",
+    desc: "Transform your gaming ideas into immersive experiences in the Web 3.0 era. Our game development experts craft interactive and decentralized games that redefine the gaming landscape.",
+  },
+  {
+    image: "/imgs/services-1.png",
+    title: "Web 3 Game Development",
+    desc: "Transform your gaming ideas into immersive experiences in the Web 3.0 era. Our game development experts craft interactive and decentralized games that redefine the gaming landscape.",
+  },
+  {
+    image: "/imgs/services-1.png",
+    title: "Web 3 Game Development",
+    desc: "Transform your gaming ideas into immersive experiences in the Web 3.0 era. Our game development experts craft interactive and decentralized games that redefine the gaming landscape.",
+  },
+  {
+    image: "/imgs/services-1.png",
+    title: "Web 3 Game Development",
+    desc: "Transform your gaming ideas into immersive experiences in the Web 3.0 era. Our game development experts craft interactive and decentralized games that redefine the gaming landscape.",
+  },
+  {
+    image: "/imgs/services-1.png",
+    title: "Web 3 Game Development",
+    desc: "Transform your gaming ideas into immersive experiences in the Web 3.0 era. Our game development experts craft interactive and decentralized games that redefine the gaming landscape.",
+  },
+];

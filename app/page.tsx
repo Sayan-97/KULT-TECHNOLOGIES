@@ -65,6 +65,15 @@ export default function Home() {
 
       {/* Contact Us */}
       <ContactUs />
+
+      <section className="container py-20 flex">
+        <div className="example-button">
+          <p>Get Started</p>
+        </div>
+        <div className="example-button2">
+          <p>Get Started</p>
+        </div>
+      </section>
     </>
   );
 }

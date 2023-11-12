@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./ui/button";
+import { services } from "@/constants";
 
 export default function OurServices() {
   return (
@@ -15,90 +16,23 @@ export default function OurServices() {
           </p>
         </div>
         <div className="flex gap-6 flex-wrap justify-center">
-          <div className="service-content bg-accent p-6 rounded-2xl flex flex-col items-start gap-8">
-            <Image
-              src={`/imgs/services-1.png`}
-              alt="img"
-              width={271.488}
-              height={280.585}
-              className="self-center"
-            />
-            <h3 className="text-2xl font-bold">Web 3 Game Development</h3>
-            <p className="text-muted">
-              Transform your gaming ideas into immersive experiences in the Web
-              3.0 era. Our game development experts craft interactive and
-              decentralized games that redefine the gaming landscape.
-            </p>
-            <Button variant="secondary" content="Get Started" />
-          </div>
-
-          <div className="service-content bg-accent p-6 rounded-2xl flex flex-col items-start gap-8">
-            <Image
-              src={`/imgs/services-1.png`}
-              alt="img"
-              width={271.488}
-              height={280.585}
-              className="self-center"
-            />
-            <h3 className="text-2xl font-bold">Web 3 Game Development</h3>
-            <p className="text-muted">
-              Transform your gaming ideas into immersive experiences in the Web
-              3.0 era. Our game development experts craft interactive and
-              decentralized games that redefine the gaming landscape.
-            </p>
-            <Button variant="secondary" content="Get Started" />
-          </div>
-
-          <div className="service-content bg-accent p-6 rounded-2xl flex flex-col items-start gap-8 ">
-            <Image
-              src={`/imgs/services-1.png`}
-              alt="img"
-              width={271.488}
-              height={280.585}
-              className="self-center"
-            />
-            <h3 className="text-2xl font-bold">Web 3 Game Development</h3>
-            <p className="text-muted">
-              Transform your gaming ideas into immersive experiences in the Web
-              3.0 era. Our game development experts craft interactive and
-              decentralized games that redefine the gaming landscape.
-            </p>
-            <Button variant="secondary" content="Get Started" />
-          </div>
-
-          <div className="service-content bg-accent p-6 rounded-2xl flex flex-col items-start gap-8">
-            <Image
-              src={`/imgs/services-1.png`}
-              alt="img"
-              width={271.488}
-              height={280.585}
-              className="self-center"
-            />
-            <h3 className="text-2xl font-bold">Web 3 Game Development</h3>
-            <p className="text-muted">
-              Transform your gaming ideas into immersive experiences in the Web
-              3.0 era. Our game development experts craft interactive and
-              decentralized games that redefine the gaming landscape.
-            </p>
-            <Button variant="secondary" content="Get Started" />
-          </div>
-
-          <div className="service-content bg-accent p-6 rounded-2xl flex flex-col items-start gap-8">
-            <Image
-              src={`/imgs/services-1.png`}
-              alt="img"
-              width={271.488}
-              height={280.585}
-              className="self-center"
-            />
-            <h3 className="text-2xl font-bold">Web 3 Game Development</h3>
-            <p className="text-muted">
-              Transform your gaming ideas into immersive experiences in the Web
-              3.0 era. Our game development experts craft interactive and
-              decentralized games that redefine the gaming landscape.
-            </p>
-            <Button variant="secondary" content="Get Started" />
-          </div>
+          {services.map((item, index) => (
+            <div
+              key={index}
+              className="w-full md:w-[calc(50%-16px)] lg:w-[calc(33.333333%-16px)] bg-accent p-6 rounded-2xl flex flex-col items-start gap-8 card-border"
+            >
+              <Image
+                src={item.image}
+                alt="img"
+                width={271.488}
+                height={280.585}
+                className="self-center"
+              />
+              <h3 className="text-2xl font-bold">{item.title}</h3>
+              <p className="text-muted">{item.desc}</p>
+              <Button variant="secondary" content="Get Started" />
+            </div>
+          ))}
         </div>
       </div>
     </section>
