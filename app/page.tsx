@@ -13,12 +13,12 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="py-20">
-        <div className="container space-y-20">
-          <div className="text-center flex flex-col items-center gap-6">
+        <div className="container space-y-16">
+          <div className="flex flex-col items-center text-center gap-4">
             <h4 className="text-xl md:text-2xl text-muted uppercase">
               Welcome to Kult Technologies
             </h4>
-            <h1 className="w-full lg:w-4/6 text-4xl md:text-6xl font-bold capitalize leading-tight lg:leading-tight mx-auto">
+            <h1 className="w-full lg:w-4/6 text-4xl md:text-6xl font-bold capitalize leading-tight lg:leading-snug mx-auto">
               Revolutionize Your Industry with Web 3 Technology:{" "}
               <span className="text-indigo-400">Explore the Future</span>
             </h1>
