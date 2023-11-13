@@ -12,7 +12,7 @@ const config: Config = {
       center: true,
       padding: {
         DEFAULT: "1rem",
-        lg: "5rem",
+        lg: "6rem",
       },
     },
     extend: {

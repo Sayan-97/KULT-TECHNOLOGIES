@@ -136,13 +136,13 @@
   outline: 2px solid transparent;
 }
 
-.example {
-  border-bottom: 1px solid;
-  border-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0) 10%,
-      var(--primary) 50%,
-      rgba(0, 0, 0, 0) 90%
-    )
-    1;
+/* Portfolio Swiper */
+.portfolioSwiper .swiper-slide {
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolioSwiper .swiper-slide {
+    width: 100%;
+  }
 }

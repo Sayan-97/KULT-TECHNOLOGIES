@@ -6,6 +6,7 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import Image from "next/image";
 
 export default function OurPortfolio() {
   return (
@@ -34,12 +35,12 @@ export default function OurPortfolio() {
             prevEl: ".slide-prev",
             nextEl: ".slide-next",
           }}
+          className="portfolioSwiper"
         >
           {portfolios.map((item, index) => (
             <SwiperSlide
               key={index}
-              style={{ width: "60%" }}
-              className="rounded-2xl overflow-hidden"
+              className="rounded-2xl overflow-hidden example"
             >
               <div className="w-full h-[440px] card-border">
                 <div
@@ -50,10 +51,15 @@ export default function OurPortfolio() {
                     backgroundPosition: "center",
                   }}
                 >
-                  <div className="flex flex-col gap-8">
-                    <h3>{item.title}</h3>
+                  <div className="flex flex-col items-start gap-8">
+                    <Image src={item.title} alt="img" width={160} height={50} className="h-auto" />
                     <p className="flex-grow text-xl">{item.des}</p>
-                    <Link href={`/`}>Learn More</Link>
+                    <Link
+                      className="text-lg font-semibold bg-primary-gradient text-transparent bg-clip-text"
+                      href={`/`}
+                    >
+                      Learn More
+                    </Link>
                   </div>
                 </div>
               </div>

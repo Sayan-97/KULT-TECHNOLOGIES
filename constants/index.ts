@@ -55,22 +55,12 @@ export const blockchains = [
 export const portfolios = [
   {
     image: "/imgs/portfolio-img-1.png",
-    title: "Solidified",
+    title: "/imgs/solidified.png",
     des: "Solidefied delivers a solution for everyone, we connect service providers with projects, supporters with teams & people with people. Do Web3 your way with Solidefied",
   },
   {
     image: "/imgs/portfolio-img-2.png",
-    title: "Forward",
-    des: "Solidefied delivers a solution for everyone, we connect service providers with projects, supporters with teams & people with people. Do Web3 your way with Solidefied",
-  },
-  {
-    image: "/imgs/portfolio-img-1.png",
-    title: "Solidified",
-    des: "Solidefied delivers a solution for everyone, we connect service providers with projects, supporters with teams & people with people. Do Web3 your way with Solidefied",
-  },
-  {
-    image: "/imgs/portfolio-img-2.png",
-    title: "Forward",
+    title: "/imgs/forward.png",
     des: "Solidefied delivers a solution for everyone, we connect service providers with projects, supporters with teams & people with people. Do Web3 your way with Solidefied",
   },
 ];
