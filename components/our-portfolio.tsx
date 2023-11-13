@@ -52,7 +52,13 @@ export default function OurPortfolio() {
                   }}
                 >
                   <div className="flex flex-col items-start gap-8">
-                    <Image src={item.title} alt="img" width={160} height={50} className="h-auto" />
+                    <Image
+                      src={item.title}
+                      alt="img"
+                      width={160}
+                      height={50}
+                      className="h-auto"
+                    />
                     <p className="flex-grow text-xl">{item.des}</p>
                     <Link
                       className="text-lg font-semibold bg-primary-gradient text-transparent bg-clip-text"

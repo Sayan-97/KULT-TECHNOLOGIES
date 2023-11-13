@@ -15,9 +15,9 @@ export default function Reviews() {
           <h2 className="text-5xl font-semibold">What Keeps Us Going</h2>
           <p className="text-xl text-muted">
             {" "}
-            We&apos;re a cutting-edge service company with a passion for innovation,
-            offering a wide range of services that empower businesses in the
-            digital age.
+            We&apos;re a cutting-edge service company with a passion for
+            innovation, offering a wide range of services that empower
+            businesses in the digital age.
           </p>
         </div>
         <Swiper
@@ -44,7 +44,7 @@ export default function Reviews() {
         >
           {reviews.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="relative bg-accent flex flex-col items-center text-center mt-8 p-8 pt-10 space-y-4 rounded-2xl card-border">
+              <div className="h-[340px] relative bg-accent flex flex-col items-center text-center mt-8 p-8 pt-10 space-y-4 rounded-2xl card-border">
                 <div className="absolute -top-8 bg-primary p-1 rounded-full">
                   <Image
                     src={item.image}
