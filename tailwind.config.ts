@@ -7,6 +7,7 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    // "container" class
     container: {
       center: true,
       padding: {
@@ -25,17 +26,13 @@ const config: Config = {
         muted: "var(--muted)",
         "muted-foreground": "var(--muted-foreground)",
       },
+      // Background Gradient
       backgroundImage: {
         "primary-gradient": "var(--primary-gradient)",
       },
-      animation: {
-        "infinite-scroll": "infinite-scroll 5s linear infinite",
-      },
-      keyframes: {
-        "infinite-scroll": {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100%)" },
-        },
+      // Screens
+      screens: {
+        sm: "375",
       },
     },
   },

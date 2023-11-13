@@ -1,10 +1,12 @@
 import ContactUs from "@/components/contact-us";
 import OurPortfolio from "@/components/our-portfolio";
-import OurServices from "@/components/our-services";
 import Reviews from "@/components/reviews";
 import Blockchains from "@/components/shared/blockchains";
 import Button from "@/components/ui/button";
 import WhyChooseUs from "@/components/why-choose-us";
+
+import { services } from "@/constants";
+import ServicesCard from "@/components/ui/services-card";
 
 export default function Home() {
   return (
@@ -52,7 +54,24 @@ export default function Home() {
       </section>
 
       {/* Our Services */}
-      <OurServices />
+      <section id="services" className="py-20">
+        <div className="container space-y-12">
+          <div className="lg:w-1/2 space-y-6 flex flex-col items-center text-center mx-auto">
+            <h2 className="text-5xl font-semibold">Our Services</h2>
+            <p className="text-xl text-muted">
+              {" "}
+              We&apos;re a cutting-edge service company with a passion for
+              innovation, offering a wide range of services that empower
+              businesses in the digital age.
+            </p>
+          </div>
+          <div className="flex gap-6 flex-wrap justify-center">
+            {services.map((item, index) => (
+              <ServicesCard item={item} key={index} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Portfolio */}
       <OurPortfolio />
