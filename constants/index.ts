@@ -2,9 +2,9 @@
 export const navLinks = [
   { label: "Home", link: "/" },
   { label: "Services", link: "#services" },
-  { label: "Portfolio", link: "/" },
-  { label: "About Us", link: "/" },
-  { label: "Contact Us", link: "/" },
+  { label: "Portfolio", link: "#portfolio" },
+  { label: "About Us", link: "#aboutus" },
+  { label: "Contact Us", link: "#contactus" },
 ];
 
 // Blockchains

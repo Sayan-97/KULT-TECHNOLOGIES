@@ -11,23 +11,24 @@ export default function ContactUs() {
   ];
 
   return (
-    <section className="py-20">
-      <div className="container grid lg:grid-cols-2 items-center max-lg:gap-12">
-        <div className="space-y-12">
-          <h2 className="text-5xl font-semibold">Contact Us</h2>
-          <ul className="text-xl space-y-6">
-            {contacts.map((item, index) => (
-              <li key={index} className="flex items-center gap-3">
-                <div className="border-2 border-secondary rounded-full p-2">
-                  <item.icon />
-                </div>
-                <p>{item.content}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <ContactUsForm />
+    <section
+      id="contactus"
+      className="grid lg:grid-cols-2 items-center max-lg:gap-12"
+    >
+      <div className="space-y-12">
+        <h2 className="text-5xl font-semibold">Contact Us</h2>
+        <ul className="text-xl space-y-6">
+          {contacts.map((item, index) => (
+            <li key={index} className="flex items-center gap-3">
+              <div className="border-2 border-secondary rounded-full p-2">
+                <item.icon />
+              </div>
+              <p>{item.content}</p>
+            </li>
+          ))}
+        </ul>
       </div>
+      <ContactUsForm />
     </section>
   );
 }

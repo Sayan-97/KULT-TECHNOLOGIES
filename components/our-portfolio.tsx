@@ -10,8 +10,7 @@ import Image from "next/image";
 
 export default function OurPortfolio() {
   return (
-    <section className="py-20">
-      <div className="container space-y-16">
+    <section id="portfolio" className="py-20 space-y-16">
         <div className="flex items-end justify-between">
           <div className="w-1/2 space-y-6">
             <h2 className="text-5xl font-semibold">Our Portfolio</h2>
@@ -72,7 +71,6 @@ export default function OurPortfolio() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
     </section>
   );
 }

@@ -13,6 +13,7 @@ export default function Blockchains() {
         autoFill={true}
         gradient={true}
         gradientColor="#0b0b0f"
+        gradientWidth={50}
       >
         {blockchains.map((item, index) => (
           <div key={index} className="px-4">

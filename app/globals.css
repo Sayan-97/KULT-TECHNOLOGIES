@@ -59,6 +59,10 @@
     @apply flex-grow;
   }
 
+  section {
+    @apply container py-20;
+  }
+
   input,
   textarea {
     @apply p-2 rounded-lg bg-accent border text-white !important;
