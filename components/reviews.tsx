@@ -6,6 +6,8 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import { FaArrowLeft } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 
 export default function Reviews() {
   return (
@@ -59,12 +61,12 @@ export default function Reviews() {
             </div>
           </SwiperSlide>
         ))}
-        <div className="absolute z-10 left-0 top-[50%] review-slide-prev">
-          Prev
-        </div>
-        <div className="absolute z-10 right-0 top-[50%] review-slide-next">
-          Next
-        </div>
+        <button className="absolute z-10 left-0 top-[50%] review-slide-prev border border-secondary rounded-full p-3">
+          <FaArrowLeft />
+        </button>
+        <button className="absolute z-10 right-0 top-[50%] review-slide-next border border-secondary rounded-full p-3">
+          <FaArrowRight />
+        </button>
       </Swiper>
     </section>
   );
