@@ -13,8 +13,14 @@ export default function ContactUs() {
   return (
     <section
       id="contactus"
-      className="grid lg:grid-cols-2 items-center max-lg:gap-12"
+      className="relative grid lg:grid-cols-2 items-center max-lg:gap-12"
     >
+      <div
+          className="absolute top-[-18%] left-[-10%] w-[354.323px] h-[354.323px] blur-[100px] rounded-[354.323px] -z-10"
+          style={{
+            background: "linear-gradient(180deg, #173B80 0%, #11573E 100%)",
+          }}
+        ></div>
       <div className="space-y-12">
         <h2 className="text-5xl font-semibold">Contact Us</h2>
         <ul className="text-xl space-y-6">

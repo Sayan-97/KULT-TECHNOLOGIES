@@ -30,10 +30,6 @@ const config: Config = {
       backgroundImage: {
         "primary-gradient": "var(--primary-gradient)",
       },
-      // Screens
-      screens: {
-        sm: "375",
-      },
     },
   },
   plugins: [],

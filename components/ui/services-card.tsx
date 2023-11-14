@@ -17,7 +17,7 @@ export default function ServicesCard(props: { item: ServicesProps }) {
           alt="img"
           width={271.488}
           height={300}
-          className="h-auto object-cover overflow-visible"
+          className="h-auto object-contain"
         />
       </div>
       <h3 className="text-2xl font-bold">{item.title}</h3>

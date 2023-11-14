@@ -13,8 +13,8 @@ import { FaArrowRight } from "react-icons/fa6";
 export default function OurPortfolio() {
   return (
     <section id="portfolio" className="py-20 space-y-16">
-      <div className="flex items-end justify-between">
-        <div className="w-1/2 space-y-6">
+      <div className="flex max-md:flex-col max-md:gap-8 items-end justify-between">
+        <div className="w-full md:w-1/2 space-y-6">
           <h2 className="text-5xl font-semibold">Our Portfolio</h2>
           <p className="text-xl text-muted">
             {" "}

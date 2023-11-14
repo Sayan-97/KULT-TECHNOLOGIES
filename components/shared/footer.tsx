@@ -33,7 +33,13 @@ export default function Footer() {
   ];
 
   return (
-    <footer>
+    <footer className="relative">
+      <div
+        className="max-md:hidden absolute bottom-0 right-[20%] w-[200px] h-[200px] blur-[160px] rounded-[354.323px] -z-10"
+        style={{
+          background: "var(--primary-gradient)",
+        }}
+      ></div>
       <div className="container">
         <div className="py-8 flex justify-between flex-wrap gap-8">
           <div className="lg:w-1/4 space-y-8">
