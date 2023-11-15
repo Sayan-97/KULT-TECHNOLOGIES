@@ -52,7 +52,7 @@ export default function Reviews() {
                   alt="img"
                   width={59.231}
                   height={59.231}
-                  className="rounded-full object-cover"
+                  className="w-16 h-16 rounded-full object-cover"
                 />
               </div>
               <div className="flex">

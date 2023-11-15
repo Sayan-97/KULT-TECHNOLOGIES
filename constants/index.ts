@@ -68,36 +68,31 @@ export const portfolios = [
 // Reviews
 export const reviews = [
   {
-    image:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
+    image: "/imgs/avatar1.jpg",
     reviews: 5,
     name: "Benjamin Collins",
     msg: "This website is a game-changer for game developers like me. The AI tools and blockchain integration make game development a breeze. I have learned so much and even sold my first NFT. The community support is outstanding!",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
+    image: "/imgs/avatar2.webp",
     reviews: 5,
     name: "James Johnson",
     msg: "I have been exploring blockchain and NFTs for a while now, and this website seemed promising. The resources are quite helpful, but I wish there were more in-depth tutorials on smart contracts. It is a good starting point for beginners, though.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
+    image: "/imgs/avatar3.jpg",
     reviews: 5,
     name: "Ethan Williams",
     msg: "Excellent platform for AI enthusiasts. The courses and articles on AI implementation are well-structured. It has been a great learning experience. The community discussions add value, and I am looking forward to more advanced content.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
+    image: "/imgs/avatar4.jpg",
     reviews: 5,
     name: "Liam Davis",
     msg: "I can nott get enough of this site! It iss not just about NFTs; it is a treasure trove of information on digital art, collectibles, and blockchain technology. I have found some amazing NFT artists here, and the marketplace is a hidden gem.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
+    image: "/imgs/avatar5.jpg",
     reviews: 5,
     name: "Noah Harris",
     msg: "As a beginner in the blockchain world, I thought this website would be my go-to resource. It has a lot of information, but it is overwhelming for someone like me. I wish there were more step-by-step guides and interactive tutorials.",
