@@ -30,7 +30,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 inset-x-0 py-4 z-40 ${
+      className={`fixed top-0 inset-x-0 py-4 z-40 ${
         navAtTop
           ? "bg-transparent"
           : "bg-[#0b0b0f] bg-opacity-80 backdrop-blur-md shadow-md"

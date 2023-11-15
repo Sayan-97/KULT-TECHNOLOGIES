@@ -1,7 +1,7 @@
 // Navbar Links
 export const navLinks = [
   { label: "Home", link: "/" },
-  { label: "Services", link: "#services" },
+  { label: "Services", link: "/services" },
   { label: "Portfolio", link: "#portfolio" },
   { label: "About Us", link: "#aboutus" },
   { label: "Contact Us", link: "#contactus" },
@@ -52,7 +52,7 @@ export const blockchains = [
 ];
 
 // Portfolios
-export const portfolios = [
+export const homePortfolios = [
   {
     image: "/imgs/portfolio-img-1.png",
     title: "/imgs/solidified.png",
@@ -60,6 +60,19 @@ export const portfolios = [
   },
   {
     image: "/imgs/portfolio-img-2.png",
+    title: "/imgs/forward.png",
+    des: "Solidefied delivers a solution for everyone, we connect service providers with projects, supporters with teams & people with people. Do Web3 your way with Solidefied",
+  },
+];
+
+export const servicesPortfolios = [
+  {
+    image: "/imgs/portfolio-img-3.png",
+    title: "/imgs/solidified.png",
+    des: "Solidefied delivers a solution for everyone, we connect service providers with projects, supporters with teams & people with people. Do Web3 your way with Solidefied",
+  },
+  {
+    image: "/imgs/portfolio-img-4.png",
     title: "/imgs/forward.png",
     des: "Solidefied delivers a solution for everyone, we connect service providers with projects, supporters with teams & people with people. Do Web3 your way with Solidefied",
   },
@@ -127,3 +140,31 @@ export const services = [
     desc: "Maximize your impact in the crypto world with our marketing services. From token launches to community building, we help you navigate the complexities of blockchain marketing.",
   },
 ];
+
+export const gameDevServices = [
+  {
+    icon: '/svgs/tabler_bulb.svg',
+    title: 'Concept Development',
+    desc: 'We work closely with you to conceptualize the perfect Web 3 game, defining the gameplay, features, and blockchain integration.',
+  },
+  {
+    icon: '/svgs/outline_blockchain.svg',
+    title: 'Blockchain Integration',
+    desc: 'Our experts seamlessly integrate blockchain technology into your game, whether through asset ownership on the blockchain or blockchain-based in-game economies.',
+  },
+  {
+    icon: '/svgs/majesticons_etherium.svg',
+    title: 'Smart Contracts',
+    desc: 'Create trustless environments and automate in-game processes using smart contracts. From item trading to rewards distribution, smart contracts add a layer of transparency and security.',
+  },
+  {
+    icon: '/svgs/flash.svg',
+    title: 'Decentralized Apps (DApps)',
+    desc: ' We design and develop decentralized applications that enhance the overall gaming experience, such as decentralized marketplaces for in-game assets or blockchain-based voting systems for community governance.',
+  },
+  {
+    icon: '/svgs/iconoir_design-nib.svg',
+    title: 'User-Centric Design',
+    desc: 'Our design team ensures that the user interface and overall game design align with your brand and provide an engaging, user-friendly experience.',
+  },
+]

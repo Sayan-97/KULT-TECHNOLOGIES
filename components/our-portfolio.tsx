@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { portfolios } from "@/constants";
+import { homePortfolios } from "@/constants";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -42,7 +42,7 @@ export default function OurPortfolio() {
         }}
         className="portfolioSwiper"
       >
-        {portfolios.map((item, index) => (
+        {homePortfolios.map((item, index) => (
           <SwiperSlide
             key={index}
             className="rounded-2xl overflow-hidden example"
