@@ -6,16 +6,20 @@ import { gameDevServices } from "@/constants";
 import Image from "next/image";
 import Button from "@/components/ui/button";
 import Blockchains from "@/components/shared/blockchains";
+import ServicesSlider from "@/components/shared/ServicesSlider";
 
 export default function Services() {
   return (
     <>
       {/* Hero Section */}
       <section className="relative space-y-16">
-        <div className="flex items-center justify-between gap-8">
-          <div className="w-2/5 space-y-6">
+        <div className="flex items-center max-md:flex-col justify-between gap-8">
+          <div className="w-full lg:w-2/5 space-y-6">
             <h2 className="text-5xl font-bold capitalize leading-tight">
-              Redesigning Gaming with <span className="text-primary">Blockchain and Decentralization</span>
+              Redesigning Gaming with{" "}
+              <span className="text-primary">
+                Blockchain and Decentralization
+              </span>
             </h2>
             <p className="text-xl text-muted">
               Welcome to the future of gaming! At Kult Technologies, we're at
@@ -57,8 +61,8 @@ export default function Services() {
       </section>
 
       {/* Why Web3 Game Dev? */}
-      <section className="relative flex items-center justify-between gap-8">
-        <div className="w-1/2 space-y-6">
+      <section className="relative flex items-center max-md:flex-col justify-between gap-8">
+        <div className="w-full lg:w-1/2 space-y-6">
           <h3 className="text-4xl font-semibold">
             Why Web 3 Game Development?
           </h3>
@@ -122,6 +126,9 @@ export default function Services() {
 
       {/* Why Choose Us */}
       <WhyChooseUs />
+
+      {/* Our Other Services */}
+      <ServicesSlider />
 
       {/* Reviews */}
       <Reviews />
