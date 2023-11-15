@@ -49,14 +49,14 @@ export default function OurPortfolio() {
           >
             <div className="w-full h-[440px] card-border">
               <div
-                className="w-full h-full flex items-end p-8 space-y-2"
+                className="w-full h-full flex items-end p-4 md:p-8"
                 style={{
                   background: `var(--portfolio-card-gradient), url(${item.image})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
               >
-                <div className="flex flex-col items-start gap-8">
+                <div className="flex flex-col items-start gap-4 md:gap-8">
                   <Image
                     src={item.title}
                     alt="img"

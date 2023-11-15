@@ -55,7 +55,7 @@ export default function Home() {
           height={259}
           className="absolute right-[-28%] md:right-[-12%] lg:right-[-4%] bottom-[40%] w-40 h-40 -z-10"
         />
-        <div className="absolute right-[16%] -z-10">
+        <div className="max-md:hidden absolute right-[16%] -z-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -97,7 +97,7 @@ export default function Home() {
             />
           </svg>
         </div>
-        <div className="absolute left-[16%] top-[10%] -z-10">
+        <div className="max-md:hidden absolute left-[16%] top-[10%] -z-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="34"
