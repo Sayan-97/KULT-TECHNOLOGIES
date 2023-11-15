@@ -5,10 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "../ui/button";
 import { navLinks } from "@/constants";
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState("Home");
   const [navAtTop, setNavAtTop] = useState(true);
+  const [navOpen, setNavOpen] = useState(false);
+  const toggleNav = () => {
+    setNavOpen(!navOpen);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,8 +58,42 @@ export default function Navbar() {
             </Link>
           ))}
         </ul>
-        <Button content="Get Started" />
+        <div className="hidden lg:block">
+          <Button content="Get Started" />
+        </div>
+        <div className="text-3xl">
+          {navOpen ? (
+            <IoClose onClick={toggleNav} />
+          ) : (
+            <IoMenu onClick={toggleNav} />
+          )}
+        </div>
       </nav>
+      <div
+        className={`absolute inset-x-0 top-[100%] ${
+          navOpen ? "scale-y-100 origin-top" : "scale-y-0 origin-top"
+        } transition-all duration-300 ease-in-out py-6 bg-[#0b0b0f] bg-opacity-95`}
+      >
+        <div className="container space-y-4">
+          <ul className="flex flex-col space-y-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.link}
+                className={`${
+                  activeLink !== link.label && "text-muted-foreground"
+                }`}
+                onClick={() => setActiveLink(link.label)}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </ul>
+          <Link href={`#services`}>
+            <Button content="Get Started" />
+          </Link>
+        </div>
+      </div>
     </header>
   );
 }

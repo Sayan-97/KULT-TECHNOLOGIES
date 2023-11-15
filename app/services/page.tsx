@@ -1,4 +1,4 @@
-import OurPortfolio from "@/components/our-portfolio";
+
 import WhyChooseUs from "@/components/why-choose-us";
 import Reviews from "@/components/reviews";
 import ContactUs from "@/components/contact-us";
@@ -7,6 +7,7 @@ import Image from "next/image";
 import Button from "@/components/ui/button";
 import Blockchains from "@/components/shared/blockchains";
 import ServicesSlider from "@/components/shared/ServicesSlider";
+import OurPortfolioServices from "@/components/our-portfolio-services";
 
 export default function Services() {
   return (
@@ -122,7 +123,7 @@ export default function Services() {
       </section>
 
       {/* Portfolio */}
-      <OurPortfolio />
+      <OurPortfolioServices />
 
       {/* Why Choose Us */}
       <WhyChooseUs />

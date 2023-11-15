@@ -8,6 +8,7 @@ import WhyChooseUs from "@/components/why-choose-us";
 import { services } from "@/constants";
 import ServicesCard from "@/components/ui/services-card";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -23,8 +24,8 @@ export default function Home() {
             <span className="text-indigo-400">Explore the Future</span>
           </h1>
           <div className="flex items-center space-x-6">
-            <Button content="Get Started" />
-            <Button variant="secondary" content="Our Portfolio" />
+            <Link href={`#services`}><Button content="Get Started" /></Link>
+            <Link href={`#portfolio`}><Button variant="secondary" content="Our Portfolio" /></Link>
           </div>
         </div>
         {/* blockchains marquee */}
@@ -43,7 +44,7 @@ export default function Home() {
           }}
         ></div>
         <div
-          className="max-md:hidden absolute top-[20%] right-0 w-[200px] h-[200px] blur-[140px] rounded-[354.323px] -z-10"
+          className="max-md:hidden absolute top-[20%] right-0 w-[200px] h-[200px] blur-[120px] rounded-[354.323px] -z-10"
           style={{
             background: "var(--primary-gradient)",
           }}

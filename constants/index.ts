@@ -68,13 +68,13 @@ export const homePortfolios = [
 export const servicesPortfolios = [
   {
     image: "/imgs/portfolio-img-3.png",
-    title: "/imgs/solidified.png",
-    des: "Solidefied delivers a solution for everyone, we connect service providers with projects, supporters with teams & people with people. Do Web3 your way with Solidefied",
+    title: "/svgs/camelrun.svg",
+    des: "Camel Run is a metaverse camel racing game based on the tradition and roots of arabic culture, race into the thrilling desert sand and collet 9999 unique NFTS",
   },
   {
     image: "/imgs/portfolio-img-4.png",
-    title: "/imgs/forward.png",
-    des: "Solidefied delivers a solution for everyone, we connect service providers with projects, supporters with teams & people with people. Do Web3 your way with Solidefied",
+    title: "/svgs/dunkinApes.png",
+    des: "Dunkin Apes is a street style basketball game based on web 3. collect unique NFT’S and in-game assets and offering and slam dunk your way in the streets.",
   },
 ];
 
