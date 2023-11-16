@@ -61,7 +61,7 @@ export default function Navbar() {
         <div className="hidden lg:block">
           <Button content="Get Started" />
         </div>
-        <div className="text-3xl">
+        <div className="block lg:hidden text-3xl">
           {navOpen ? (
             <IoClose onClick={toggleNav} />
           ) : (
@@ -70,11 +70,11 @@ export default function Navbar() {
         </div>
       </nav>
       <div
-        className={`absolute inset-x-0 top-[100%] ${
+        className={`lg:hidden absolute inset-x-0 top-[100%] ${
           navOpen ? "scale-y-100 origin-top" : "scale-y-0 origin-top"
         } transition-all duration-300 ease-in-out py-6 bg-[#0b0b0f] bg-opacity-95`}
       >
-        <div className="container space-y-4">
+        <div className="container flex flex-col gap-6">
           <ul className="flex flex-col space-y-8">
             {navLinks.map((link) => (
               <Link
