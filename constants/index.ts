@@ -61,7 +61,7 @@ export const homePortfolios = [
   {
     image: "/imgs/portfolio-img-2.png",
     title: "/imgs/forward.png",
-    des: "Solidefied delivers a solution for everyone, we connect service providers with projects, supporters with teams & people with people. Do Web3 your way with Solidefied",
+    des: "Forward Protocol’s modular architecture and ready-to-deploy fully customizable smart contracts are designed for any learning platform to adopt blockchain technology.",
   },
 ];
 
