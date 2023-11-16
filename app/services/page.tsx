@@ -23,7 +23,7 @@ export default function Services() {
               </span>
             </h2>
             <p className="text-xl text-muted">
-              Welcome to the future of gaming! At Kult Technologies, we're at
+              Welcome to the future of gaming! At Kult Technologies, we&apos;re at
               the forefront of Web 3 game development, revolutionizing the
               gaming industry by seamlessly integrating blockchain and
               decentralized technologies. We believe in creating gaming
